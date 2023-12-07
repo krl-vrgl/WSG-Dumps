@@ -1,8 +1,54 @@
 <!DOCTYPE html>
 <html>
-<title></title>
+<title>Testing of image pop up for alttext</title>
 <head>
-<style></style>
+<style>
+
+.main{
+position: relative;
+display: inline-block;
+width: 45%;
+padding-left: 37.5%;
+float: left;
+}
+
+.amogus{
+width: 50%;
+}
+
+.popup{
+display: none;
+position: relative;
+background-color: #000;
+width: 50%;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+top: -5px;
+}
+
+.amogus:hover .popup{
+display: block;
+}
+
+.icon{
+width: 20%;
+}
+
+</style>
 </head>
-<body></body>
+
+<body>
+
+    <div class="main">
+
+        <img src="Alt-Text Project/amogus.png" class="amogus">
+
+        <div class="popup">
+
+            <img src="Alt-Text Project/text icon.png" class="icon">
+            <img src="Alt-Text Project/tts icon.png" class="icon">
+    
+        </div>
+    </div>
+</body>
 </html>
